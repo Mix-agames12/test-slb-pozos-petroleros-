@@ -1,1 +1,32 @@
-<p>form-view works!</p>
+<main>
+  <router-outlet>
+    <!-- main content  -->
+    <div class="container">
+      <hr>
+      <h1>Ingreso de nuevos pozos</h1>
+      <div class="form-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre del pozo</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="location">ubicacion</label>
+            <input type="text" id="location" name="location">
+          </div>
+          <div class="form-group">
+            <label for="dailyProd">Produccion diaria</label>
+            <input type="number" id="dailyProd" name="dailyProd">
+          </div>
+          <div class="form-group">
+            <label for="InitState">Estado Inicial</label>
+            <input type="text" id="InitState" name="InitState">
+          </div>
+        </form>
+      </div>
+      <div>
+        <button type="submit">Registar</button>
+      </div>
+    </div>
+  </router-outlet>
+</main>
